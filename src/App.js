@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { DivHead, DivLista, DivTablero } from './componentes/Cajas';
 
