@@ -7,3 +7,19 @@ export function DivHead({children}){
         </div>
     );
 }
+
+export function DivTablero({children}){
+    return(
+        <div className="div-tablero">
+            {children}
+        </div>
+    );
+}
+
+export function DivLista({children}){
+    return(
+        <div className="div-lista">
+            {children}
+        </div>
+    );
+}
