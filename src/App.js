@@ -1,5 +1,6 @@
 import './App.css';
 import { DivHead, DivLista, DivTablero } from './componentes/Cajas';
+import { Footer } from './componentes/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <h1>Tareas completadas</h1>
         </DivLista>
       </DivTablero>
+      <Footer />
     </div>
   );
 }
