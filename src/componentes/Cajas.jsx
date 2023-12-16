@@ -31,3 +31,11 @@ export function DivCard({children}){
         </div>
     );
 }
+
+export function DivNav({children}){
+    return(
+        <div className="div-nav">
+            {children}
+        </div>
+    );
+}
