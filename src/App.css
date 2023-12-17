@@ -1,3 +1,4 @@
+/*#region nav bar*/
 .div-nav{
   background-color: #024059;
   font-size: 1.5rem;
@@ -17,3 +18,12 @@
   display: inline-block;
   text-align: center;
 }
+/*#endregion */
+
+/*#region tablero */
+.div-tablero{
+  background-color: #393d42;
+  height: 100vh;
+  width: 100vw;
+}
+/*#endregion */
