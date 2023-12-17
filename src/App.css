@@ -27,3 +27,8 @@
   width: 100vw;
 }
 /*#endregion */
+
+.paper{
+  display: flex;
+  flex-direction: column;
+}
