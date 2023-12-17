@@ -5,9 +5,15 @@ import { DivNav } from "./Cajas";
 export function NavBar() {
     return (
         <DivNav>
-            <NavLink to="home">Tablero</NavLink>
+            
+            <li>
+                <NavLink to="home" className="nav-item" >Tablero</NavLink>
+            </li>
 
-            <NavLink to="newtask" >Nueva Tarea</NavLink>
+            <li>
+                <NavLink to="newtask" className="nav-item" >Nueva Tarea</NavLink>
+            </li>
+
         </DivNav>
     );
 }
