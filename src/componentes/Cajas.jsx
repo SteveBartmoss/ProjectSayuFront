@@ -39,3 +39,11 @@ export function DivNav({children}){
         </div>
     );
 }
+
+export function Paper({children}){
+    return(
+        <div className="paper">
+            {children}
+        </div>
+    );
+}
