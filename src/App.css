@@ -1,6 +1,23 @@
+/*#region colores*/
+:root{
+  --gris-1: #3c3c3c;
+  --gris-2: #515151;
+  --gris-3: #666666;
+  --gris-4: #8c8c8c;
+  --gris-5: #b5b5b5;
+  --gris-6: #171718;
+  --gris-7: #1f2124;
+  --gris-8: #393d42;
+  --gris-9: #6a6e73;
+  --gris-10: #9fa3a9;
+  --gris-11: #65727c;
+  --gris-12: #3e4144;
+}
+/*#endregion */
+
 /*#region nav bar*/
 .div-nav{
-  background-color: #024059;
+  background-color: var(--gris-6);
   font-size: 1.5rem;
   height: 3.5rem;
   list-style: none;
@@ -22,7 +39,7 @@
 
 /*#region tablero */
 .div-tablero{
-  background-color: #393d42;
+  background-color: var(--gris-8);
   height: 100vh;
   width: 100vw;
 }
