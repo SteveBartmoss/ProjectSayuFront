@@ -1,7 +1,19 @@
 .div-nav{
   background-color: #024059;
   font-size: 1.5rem;
-  height: 2rem;
+  height: 3.5rem;
   list-style: none;
 }
 
+.nav-item{
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  font-weight: 900;
+}
+
+.div-nav li{
+  display: inline-block;
+  text-align: center;
+}
