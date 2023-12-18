@@ -1,8 +1,6 @@
 import './App.css';
 import { RouterTablero } from './Routes/Router';
-import { DivHead, DivLista, DivTablero, Paper } from './componentes/Cajas';
-import { Footer } from './componentes/Footer';
-import { NavBar } from './componentes/NavBar';
+import { Paper } from './componentes/Cajas';
 
 function App() {
   return (
