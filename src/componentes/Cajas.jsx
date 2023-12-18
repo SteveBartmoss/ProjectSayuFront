@@ -47,3 +47,11 @@ export function Paper({children}){
         </div>
     );
 }
+
+export function GridListas({children}){
+    return(
+        <div className="grid-lista">
+            {children}
+        </div>
+    );
+}
