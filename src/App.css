@@ -49,3 +49,12 @@
   display: flex;
   flex-direction: column;
 }
+
+.div-lista{
+
+}
+
+.grid-lista{
+  display: flex;
+  flex-direction: row;
+}
