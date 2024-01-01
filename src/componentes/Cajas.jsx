@@ -58,7 +58,15 @@ export function GridListas({children}){
 
 export function DivFooter({children}){
     return(
-        <div className="grid-lista">
+        <div className="div-footer">
+            {children}
+        </div>
+    );
+}
+
+export function DivTitleLista({children}){
+    return(
+        <div className="div-title-lista">
             {children}
         </div>
     );
