@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { DivLista } from "./Cajas";
+import { DivLista, DivScrooll, DivTitleLista } from "./Cajas";
 import { CardTarea } from "./CardTarea";
 
 export function Pendientes() {
@@ -20,12 +20,16 @@ export function Pendientes() {
     return (
         <>
             <DivLista>
-                <h1>Tareas Pendientes</h1>
-                {
-                    tareas.map(
-                        tarea => <CardTarea tarea={tarea} />
-                    )
-                }
+                <DivTitleLista>
+                    <h1>Tareas Pendientes</h1>
+                </DivTitleLista>
+                <DivScrooll>
+                    {
+                        tareas.map(
+                            tarea => <CardTarea tarea={tarea} />
+                        )
+                    }
+                </DivScrooll>
             </DivLista>
         </>
     );
