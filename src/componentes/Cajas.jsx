@@ -71,3 +71,11 @@ export function DivTitleLista({children}){
         </div>
     );
 }
+
+export function DivScrooll({children}){
+    return(
+        <div className="div-scroll">
+            {children}
+        </div>
+    );
+}
