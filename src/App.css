@@ -12,8 +12,10 @@
   --gris-10: #9fa3a9;
   --gris-11: #65727c;
   --gris-12: #3e4144;
+  --gris-13: #15202B;
 
   --azul-1: #024059;
+  --azul-2: #005b99;
 }
 /*#endregion */
 
@@ -53,10 +55,18 @@
 }
 
 .div-lista{
-
+  background-color: var(--gris-7);
 }
 
 .grid-lista{
   display: flex;
   flex-direction: row;
+}
+
+.div-title-lista{
+  background-color: var(--azul-2);
+}
+
+.div-footer{
+  background-color: var(--gris-13);
 }
