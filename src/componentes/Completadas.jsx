@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { DivLista } from "./Cajas";
+import { DivLista, DivScrooll, DivTitleLista } from "./Cajas";
 import { CardTarea } from "./CardTarea";
 
 export function Completadas() {
@@ -20,12 +20,16 @@ export function Completadas() {
     return (
         <>
             <DivLista>
-                <h1>Tareas Completadas</h1>
-                {
-                    tareas.map(
-                        tarea => <CardTarea tarea={tarea} />
-                    )
-                }
+                <DivTitleLista>
+                    <h1>Tareas Completadas</h1>
+                </DivTitleLista>
+                <DivScrooll>
+                    {
+                        tareas.map(
+                            tarea => <CardTarea tarea={tarea} />
+                        )
+                    }
+                </DivScrooll>
             </DivLista>
         </>
     );
