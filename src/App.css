@@ -44,8 +44,6 @@
 /*#region tablero */
 .div-tablero{
   background-color: var(--gris-6);
-  height: 100vh;
-  width: 100vw;
 }
 /*#endregion */
 
@@ -55,7 +53,15 @@
 }
 
 .div-lista{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   background-color: var(--gris-7);
+}
+
+.div-scroll{
+  height: 90%;
+  overflow-y: scroll;
 }
 
 .grid-lista{
