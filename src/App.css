@@ -12,12 +12,14 @@
   --gris-10: #9fa3a9;
   --gris-11: #65727c;
   --gris-12: #3e4144;
+
+  --azul-1: #024059;
 }
 /*#endregion */
 
 /*#region nav bar*/
 .div-nav{
-  background-color: var(--gris-6);
+  background-color: var(--azul-1);
   font-size: 1.5rem;
   height: 3.5rem;
   list-style: none;
@@ -39,7 +41,7 @@
 
 /*#region tablero */
 .div-tablero{
-  background-color: var(--gris-8);
+  background-color: var(--gris-6);
   height: 100vh;
   width: 100vw;
 }
