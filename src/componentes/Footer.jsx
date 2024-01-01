@@ -1,9 +1,10 @@
 import React from "react";
+import { DivFooter } from "./Cajas";
 
 export function Footer(){
     return(
-        <div>
+        <DivFooter>
             <h1>Power By devfarm</h1>
-        </div>
+        </DivFooter>
     );
 }
