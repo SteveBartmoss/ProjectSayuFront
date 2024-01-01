@@ -55,3 +55,11 @@ export function GridListas({children}){
         </div>
     );
 }
+
+export function DivFooter({children}){
+    return(
+        <div className="grid-lista">
+            {children}
+        </div>
+    );
+}
