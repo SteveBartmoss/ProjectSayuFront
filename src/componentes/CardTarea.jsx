@@ -4,7 +4,7 @@ import { DivCard } from "./Cajas";
 export function CardTarea({tarea}){
     return(
         <DivCard>
-            <h1>{tarea.Titulo}</h1>
+            <h1  className="title-task">{tarea.Titulo}</h1>
             <p>{tarea.Descripcion}</p>
         </DivCard>
     );
