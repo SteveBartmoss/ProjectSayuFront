@@ -108,3 +108,11 @@
   margin: 0.5rem;
   border-radius: 0.3rem;
 }
+
+.div-center{
+  width: 90%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
