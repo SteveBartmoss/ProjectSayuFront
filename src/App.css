@@ -47,6 +47,13 @@
 }
 /*#endregion */
 
+/*#region titles */
+.title-lista{
+  font-family: 'Roboto Mono';
+  color: white;
+}
+/*#endregion */
+
 .paper{
   display: flex;
   flex-direction: column;
