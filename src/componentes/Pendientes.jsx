@@ -21,7 +21,7 @@ export function Pendientes() {
         <>
             <DivLista>
                 <DivTitleLista>
-                    <h1>Tareas Pendientes</h1>
+                    <h1 className="title-lista">Tareas Pendientes</h1>
                 </DivTitleLista>
                 <DivScrooll>
                     {
