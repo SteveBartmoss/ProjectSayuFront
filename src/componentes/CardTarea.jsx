@@ -5,7 +5,7 @@ export function CardTarea({tarea}){
     return(
         <DivCard>
             <h1  className="title-task">{tarea.Titulo}</h1>
-            <p>{tarea.Descripcion}</p>
+            <p className="content-task">{tarea.Descripcion}</p>
         </DivCard>
     );
 }
