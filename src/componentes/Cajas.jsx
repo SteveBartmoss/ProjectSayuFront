@@ -79,3 +79,11 @@ export function DivScrooll({children}){
         </div>
     );
 }
+
+export function DivCenter({children}){
+    return(
+        <div className="div-center">
+            {children}
+        </div>
+    );
+}
