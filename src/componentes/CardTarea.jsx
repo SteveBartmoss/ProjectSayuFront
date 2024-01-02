@@ -6,6 +6,7 @@ export function CardTarea({tarea}){
         <DivCard>
             <h1  className="title-task">{tarea.Titulo}</h1>
             <p className="content-task">{tarea.Descripcion}</p>
+            <button>Completar</button>
         </DivCard>
     );
 }
