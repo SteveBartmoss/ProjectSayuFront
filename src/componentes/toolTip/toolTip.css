@@ -1,0 +1,23 @@
+.tool-tip-div {
+    position: relative;
+    display: flex;
+    overflow: visible;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tool-tip {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    color: white;
+    background: var(--gris-2);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 2;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
