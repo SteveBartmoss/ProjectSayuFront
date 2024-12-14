@@ -1,0 +1,9 @@
+.snackbar {
+    display: none;
+}
+
+.snack-open {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
