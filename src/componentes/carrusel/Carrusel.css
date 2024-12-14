@@ -1,0 +1,22 @@
+.carrusel-buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dot-carrusel{
+  width: .7rem;
+  height: .7rem;
+  background-color: var(--ever-gray2);
+  margin: 0 1rem;
+  border-radius: 100%;
+}
+
+.dot-selected{
+  width: .7rem;
+  height: .7rem;
+  background-color: var(--azul-12);
+  margin: 0 1rem;
+  border-radius: 100%;
+}
