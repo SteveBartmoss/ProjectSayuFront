@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { Tablero } from "../pages/tablero";
 
-import { DivApp, DivFull } from "../componentes/contenedores/Contenedores";
+import { DivFull } from "../componentes/contenedores/Contenedores";
 import { MenuVertical } from "../componentes/menuVertical/MenuVertical";
 import { TopBar } from "../componentes/topBar/TopBar";
 
