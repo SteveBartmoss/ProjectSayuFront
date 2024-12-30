@@ -1,5 +1,3 @@
-import { ExtendPanel } from "../componentes/extendpanel/ExtendPanel";
-import { TopBar } from "../componentes/topBar/TopBar";
 import { TaskList } from "./TaskList";
 import './Tablero.css';
 
