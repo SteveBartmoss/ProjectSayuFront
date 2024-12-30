@@ -1,0 +1,7 @@
+.div-tablero{
+    overflow-y: scroll;
+    width: 95%; 
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
