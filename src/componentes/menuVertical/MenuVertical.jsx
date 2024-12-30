@@ -14,7 +14,7 @@ export function MenuVertical({menuItems}) {
 
     return (
         <div className={abrir ? 'menu-vertical' : 'menu-vertical-close'}>
-            <MenuBoton evento={closeMenu} isOpen={abrir} />
+            <MenuBoton evento={closeMenu} isOpen={abrir} label="Project Sayu" />
             <div className={abrir ? 'nav-bar' : 'nav-bar-close'}>
                 {
                     menuItems.map(item =>
