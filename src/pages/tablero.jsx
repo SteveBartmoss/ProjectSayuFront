@@ -1,23 +1,19 @@
 import { ExtendPanel } from "../componentes/extendpanel/ExtendPanel";
 import { TopBar } from "../componentes/topBar/TopBar";
+import { TaskList } from "./TaskList";
 
 
 export function Tablero(){
     return(
         <>
             <div>
-                <ExtendPanel title="IceBox">
+                <TaskList listTitle="Por hacer" elements={[]} />
 
-                </ExtendPanel>
-                <ExtendPanel title="En progreso">
+                <TaskList listTitle="En progreso" elements={[]} />
 
-                </ExtendPanel>
-                <ExtendPanel title="Pruebas">
+                <TaskList listTitle="En pruebas" elements={[]} />
 
-                </ExtendPanel>
-                <ExtendPanel title="Terminadas">
-
-                </ExtendPanel>
+                <TaskList listTitle="Terminadas" elements={[]} />
             </div>
         </>
     )
