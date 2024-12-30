@@ -3,6 +3,7 @@ import { Tablero } from "../pages/tablero";
 
 import { DivApp, DivFull } from "../componentes/contenedores/Contenedores";
 import { MenuVertical } from "../componentes/menuVertical/MenuVertical";
+import { TopBar } from "../componentes/topBar/TopBar";
 
 export function RouterApp() {
 
@@ -133,6 +134,7 @@ export function RouterApp() {
             <MenuVertical menuItems={menuElements} />
 
             <DivFull>
+                <TopBar />
                 <Routes>
                     <Route path="/" element={<Tablero />} />
                 </Routes>
