@@ -1,6 +1,5 @@
 import './App.css';
 import './componentes/css/components.css'
-import { RouterTablero } from './Routes/Router';
 import { RouterMain } from './Routes/routerMain';
 import { MainFrame } from './componentes/contenedores/Contenedores';
 
