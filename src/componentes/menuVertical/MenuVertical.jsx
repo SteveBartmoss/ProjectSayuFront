@@ -4,7 +4,7 @@ import './MenuVertical.css'
 import { MenuList } from "../MenuList";
 import { MenuBoton } from "../MenuBoton";
 
-export function MenuVertical({menuItems}) {
+export function MenuVertical({menuItems,menuBtn=false}) {
 
     const [abrir, setAbrir] = useState(true)
 
@@ -14,7 +14,17 @@ export function MenuVertical({menuItems}) {
 
     return (
         <div className={abrir ? 'menu-vertical' : 'menu-vertical-close'}>
-            <MenuBoton evento={closeMenu} isOpen={abrir} label="Project Sayu" />
+            {
+                menuBtn ? 
+                    <div className="div-menu-btn" onClick={closeMenu}>
+                        <div>
+
+                        </div>
+                    </div> 
+                : 
+                    <></>
+            }
+            <MenuBoton evento={closeMenu} isOpen={abrir} label="Ui Steve" />
             <div className={abrir ? 'nav-bar' : 'nav-bar-close'}>
                 {
                     menuItems.map(item =>
