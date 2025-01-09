@@ -77,11 +77,3 @@ export function DivCanva({children}){
         </div>
     )
 }
-
-export function DivApp({children}){
-    return(
-        <div className="div-app">
-            {children}
-        </div>
-    )
-}
