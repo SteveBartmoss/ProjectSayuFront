@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Icon } from "./Icon";
+
 import { MenuList } from "./MenuList";
 import { NavLink } from "react-router-dom";
+import { Icon } from "./icon/Icon";
 
 
 export function MenuMobil({menuItems}) {

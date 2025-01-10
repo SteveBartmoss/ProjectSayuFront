@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './CodeSpace.css';
+import { clasificateToken } from './gogh';
 
 export function CodeSpace({title,rawCode=""}){
 
@@ -8,8 +9,14 @@ export function CodeSpace({title,rawCode=""}){
         return slices
     }
 
+    const tokenCode=(codeLine)=>{
+        let tokens=codeLine.split(' ')
+        console.log(tokens)
+        return tokens
+    }
+
     useEffect(()=>{
-        console.log(sliceCode())
+        //console.log(sliceCode())
     },[])
 
     return(
@@ -21,8 +28,12 @@ export function CodeSpace({title,rawCode=""}){
                 {
                     sliceCode().map( lineCode => 
                         <p>
-                            {lineCode}
-                        </p>
+                            {
+                                tokenCode(lineCode).map(token =>
+                                    <span className={clasificateToken(token)}>{token} </span>
+                                )
+                            }
+                        </p> 
                     )
                 }
             </div>
