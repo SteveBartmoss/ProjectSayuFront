@@ -14,119 +14,44 @@ export function RouterApp() {
             childs: []
         },
         {
-            title: 'Cards',
+            title: 'Tablero',
             route: '',
             childs: [
                 {
-                    title: 'Card Basic',
+                    title: 'Panel Principal',
                     route: '/cards/basic',
                 },
             ]
         },
         {
-            title: 'Components',
+            title: 'Tickets',
             route: '',
             childs: [
                 {
-                    title: 'Expansion Panel',
+                    title: 'Panel Principal',
                     route: '/acordeon',
                 },
                 {
                     title: 'Buttons',
                     route: '/components/buttons',
                 },
-                {
-                    title: 'Tabs',
-                    route: '/components/tabs',
-                },
-                {
-                    title: 'Modales',
-                    route: '/components/modales',
-                },
-                {
-                    title: 'Iconos',
-                    route: '/components/icons',
-                },
-                {
-                    title: 'Loader',
-                    route: '/components/loader',
-                },
-                {
-                    title: 'Tool Tip',
-                    route: '/components/tooltip',
-                },
-                {
-                    title: 'Chip',
-                    route: '/components/chip',
-                },
-                {
-                    title: 'SnackBar',
-                    route: '/components/snackbar',
-                },
-                {
-                    title: 'Menu',
-                    route: '/components/menu',
-                },
-                {
-                    title: 'Carrusel',
-                    route: '/components/carrusel',
-                },
-                {
-                    title: 'Progress Bar',
-                    route: '/components/progressbar',
-                }
+                
             ]
         },
         {
-            title: 'Forms',
+            title: 'Administracion',
             route: '',
             childs: [
                 {
-                    title: 'Texfield',
+                    title: 'Cuentas',
                     route: '/forms/texfield',
                 },
                 {
-                    title: 'Switch',
+                    title: 'Permisos',
                     route: '/forms/switch',
                 },
-                {
-                    title: 'Slider',
-                    route: '/forms/slider',
-                },
-                {
-                    title: 'Text Long',
-                    route: '/forms/textlong',
-                },
-                {
-                    title: 'Select Box',
-                    route: '/forms/selectbox',
-                }
             ]
         },
-        {
-            title: 'Tables',
-            route: '',
-            childs: [
-                {
-                    title: 'Table',
-                    route: '/tables/table',
-                },
-            ]
-        },
-        {
-            title: 'Pages',
-            route: '',
-            childs: [
-                {
-                    title: 'Login',
-                    route: '/login',
-                },
-                {
-                    title: 'BadRoute',
-                    route: '/badroute',
-                }
-            ]
-        }
     ]
 
     return (
