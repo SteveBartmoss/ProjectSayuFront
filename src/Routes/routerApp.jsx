@@ -4,6 +4,8 @@ import { Tablero } from "../pages/tablero";
 import { DivFull } from "../componentes/contenedores/Contenedores";
 import { MenuVertical } from "../componentes/menuVertical/MenuVertical";
 import { TopBar } from "../componentes/topBar/TopBar";
+import { TaskConfig } from "../pages/task/taskConfig/TaskConfig";
+import { TaskDashboard } from "../pages/task/taskDashboad/TaskDashboard";
 
 export function RouterApp() {
 
@@ -18,8 +20,8 @@ export function RouterApp() {
             route: '',
             childs: [
                 {
-                    title: 'Panel Principal',
-                    route: '/app/',
+                    title: 'Dashboard',
+                    route: '/tareas/dashboard',
                 },
                 {
                     title: 'Tareas',
@@ -65,7 +67,9 @@ export function RouterApp() {
             <DivFull>
                 <TopBar />
                 <Routes>
+                    <Route path="/tareas/dashboard" element={<TaskDashboard />} />
                     <Route path="/tablero" element={<Tablero />} />
+                    <Route path="/tareas/config" element={<TaskConfig />} />
                 </Routes>
             </DivFull>
         </>
