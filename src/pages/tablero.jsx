@@ -1,5 +1,5 @@
-import { TaskList } from "./TaskList";
 import './Tablero.css';
+import { TaskList } from '../appComponents/taskList/TaskList';
 
 export function Tablero(){
 

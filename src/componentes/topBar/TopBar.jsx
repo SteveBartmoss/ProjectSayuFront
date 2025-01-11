@@ -4,6 +4,9 @@ import './TopBar.css';
 import { Modal } from '../modal/Modal';
 import { Card, CardAccions } from '../card/Card';
 import { TextField } from '../textField/TextField';
+import { DivRow } from '../contenedores/Contenedores';
+import { DivCol } from '../contenedores/Contenedores';
+import { Menu } from '../menu/Menu';
 
 export function TopBar(){
     
@@ -17,21 +20,33 @@ export function TopBar(){
         setOpenNewTask(false)
     }
 
+    const menuConfiguracion = ['Cerrar Sesion']
+
     return(
         <>
             <div className="top-bar-background">
                 <span>User image</span>
-                <span>Config menu</span>
+                <Menu titulo={'configuracion'} elementos={menuConfiguracion} />
                 <Btn evento={()=>openModalTask()} variant='' >Aregar Tarea</Btn>
                 <span>Top Bar</span>
             </div>
 
-            <Modal estado={openNewTask} close={closeModalTask}>
+            <Modal estado={openNewTask} close={closeModalTask} persistent={true}>
                 <Card>
                     <h1>Nueva tarea</h1>
-                    <TextField label={'Titulo'} />
-                    <TextField label={'Descripcion'} />
+                    <DivRow>
+                        <DivCol>
+                            <TextField label={'Titulo'} />
+                        </DivCol>
+                    </DivRow>
+                    <DivRow>
+                        <DivCol>
+                            <TextField label={'Descripcion'} />
+                        </DivCol>
+                    </DivRow>
+                    
                     <CardAccions>
+                        
                         <Btn>Guardar</Btn>
                         <Btn evento={()=>closeModalTask()} variant='' color='error'>Cancelar</Btn>
                     </CardAccions>

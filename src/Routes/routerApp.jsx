@@ -4,129 +4,60 @@ import { Tablero } from "../pages/tablero";
 import { DivFull } from "../componentes/contenedores/Contenedores";
 import { MenuVertical } from "../componentes/menuVertical/MenuVertical";
 import { TopBar } from "../componentes/topBar/TopBar";
+import { TaskConfig } from "../pages/task/taskConfig/TaskConfig";
+import { TaskDashboard } from "../pages/task/taskDashboad/TaskDashboard";
 
 export function RouterApp() {
 
     const menuElements = [
         {
             title: 'Home',
-            route: '/',
+            route: '/tablero',
             childs: []
         },
         {
-            title: 'Cards',
+            title: 'Tablero',
             route: '',
             childs: [
                 {
-                    title: 'Card Basic',
-                    route: '/cards/basic',
+                    title: 'Dashboard',
+                    route: '/tareas/dashboard',
                 },
+                {
+                    title: 'Tareas',
+                    route: '/tareas/config',
+                }
             ]
         },
         {
-            title: 'Components',
+            title: 'Tickets',
             route: '',
             childs: [
                 {
-                    title: 'Expansion Panel',
+                    title: 'Panel Principal',
                     route: '/acordeon',
                 },
                 {
                     title: 'Buttons',
                     route: '/components/buttons',
                 },
-                {
-                    title: 'Tabs',
-                    route: '/components/tabs',
-                },
-                {
-                    title: 'Modales',
-                    route: '/components/modales',
-                },
-                {
-                    title: 'Iconos',
-                    route: '/components/icons',
-                },
-                {
-                    title: 'Loader',
-                    route: '/components/loader',
-                },
-                {
-                    title: 'Tool Tip',
-                    route: '/components/tooltip',
-                },
-                {
-                    title: 'Chip',
-                    route: '/components/chip',
-                },
-                {
-                    title: 'SnackBar',
-                    route: '/components/snackbar',
-                },
-                {
-                    title: 'Menu',
-                    route: '/components/menu',
-                },
-                {
-                    title: 'Carrusel',
-                    route: '/components/carrusel',
-                },
-                {
-                    title: 'Progress Bar',
-                    route: '/components/progressbar',
-                }
+                
             ]
         },
         {
-            title: 'Forms',
+            title: 'Administracion',
             route: '',
             childs: [
                 {
-                    title: 'Texfield',
+                    title: 'Cuentas',
                     route: '/forms/texfield',
                 },
                 {
-                    title: 'Switch',
+                    title: 'Permisos',
                     route: '/forms/switch',
                 },
-                {
-                    title: 'Slider',
-                    route: '/forms/slider',
-                },
-                {
-                    title: 'Text Long',
-                    route: '/forms/textlong',
-                },
-                {
-                    title: 'Select Box',
-                    route: '/forms/selectbox',
-                }
             ]
         },
-        {
-            title: 'Tables',
-            route: '',
-            childs: [
-                {
-                    title: 'Table',
-                    route: '/tables/table',
-                },
-            ]
-        },
-        {
-            title: 'Pages',
-            route: '',
-            childs: [
-                {
-                    title: 'Login',
-                    route: '/login',
-                },
-                {
-                    title: 'BadRoute',
-                    route: '/badroute',
-                }
-            ]
-        }
     ]
 
     return (
@@ -136,7 +67,9 @@ export function RouterApp() {
             <DivFull>
                 <TopBar />
                 <Routes>
-                    <Route path="/" element={<Tablero />} />
+                    <Route path="/tareas/dashboard" element={<TaskDashboard />} />
+                    <Route path="/tablero" element={<Tablero />} />
+                    <Route path="/tareas/config" element={<TaskConfig />} />
                 </Routes>
             </DivFull>
         </>
