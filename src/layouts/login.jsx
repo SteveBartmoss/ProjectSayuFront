@@ -9,7 +9,7 @@ export function Login() {
     const navigate = useNavigate()
 
     const handleButtonClick=()=>{
-        navigate('/app/')
+        navigate('/tablero')
     }
 
     return (
