@@ -10,7 +10,7 @@ export function RouterApp() {
     const menuElements = [
         {
             title: 'Home',
-            route: '/',
+            route: '/tablero',
             childs: []
         },
         {
@@ -19,8 +19,12 @@ export function RouterApp() {
             childs: [
                 {
                     title: 'Panel Principal',
-                    route: '/cards/basic',
+                    route: '/app/',
                 },
+                {
+                    title: 'Tareas',
+                    route: '/tareas/config',
+                }
             ]
         },
         {
@@ -61,7 +65,7 @@ export function RouterApp() {
             <DivFull>
                 <TopBar />
                 <Routes>
-                    <Route path="/" element={<Tablero />} />
+                    <Route path="/tablero" element={<Tablero />} />
                 </Routes>
             </DivFull>
         </>
