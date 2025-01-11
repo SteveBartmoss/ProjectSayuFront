@@ -14,7 +14,7 @@ export function Login() {
 
     return (
         <DivRow>
-            <img className="img-login" src="/Assets/montain.jpg" />
+            <img className="img-login" src="/Assets/montain.jpg" alt="loginImg" />
             <DivCanva>
                 <DivCol>
                     <h1 className="alter-subtitle">Bienvenido a UiSteve</h1>
