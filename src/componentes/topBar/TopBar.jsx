@@ -6,6 +6,7 @@ import { Card, CardAccions } from '../card/Card';
 import { TextField } from '../textField/TextField';
 import { DivRow } from '../contenedores/Contenedores';
 import { DivCol } from '../contenedores/Contenedores';
+import { Menu } from '../menu/Menu';
 
 export function TopBar(){
     
@@ -19,11 +20,13 @@ export function TopBar(){
         setOpenNewTask(false)
     }
 
+    const menuConfiguracion = ['Cerrar Sesion']
+
     return(
         <>
             <div className="top-bar-background">
                 <span>User image</span>
-                <span>Config menu</span>
+                <Menu titulo={'configuracion'} elementos={menuConfiguracion} />
                 <Btn evento={()=>openModalTask()} variant='' >Aregar Tarea</Btn>
                 <span>Top Bar</span>
             </div>
