@@ -6,6 +6,7 @@ import { MenuVertical } from "../componentes/menuVertical/MenuVertical";
 import { TopBar } from "../componentes/topBar/TopBar";
 import { TaskConfig } from "../pages/task/taskConfig/TaskConfig";
 import { TaskDashboard } from "../pages/task/taskDashboad/TaskDashboard";
+import { Usuarios } from "../pages/usuarios/Usuarios";
 
 export function RouterApp() {
 
@@ -50,7 +51,7 @@ export function RouterApp() {
             childs: [
                 {
                     title: 'Cuentas',
-                    route: '/forms/texfield',
+                    route: '/cuentas/config',
                 },
                 {
                     title: 'Permisos',
@@ -70,6 +71,7 @@ export function RouterApp() {
                     <Route path="/tareas/dashboard" element={<TaskDashboard />} />
                     <Route path="/tablero" element={<Tablero />} />
                     <Route path="/tareas/config" element={<TaskConfig />} />
+                    <Route path="/cuentas/config" element={<Usuarios />} />
                 </Routes>
             </DivFull>
         </>
