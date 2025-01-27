@@ -1,12 +1,17 @@
 import { Btn } from "../../componentes/btn/Btn";
 import { Card, CardAccions } from "../../componentes/card/Card";
 import { DivRow } from "../../componentes/contenedores";
+import { Modal } from "../../componentes/modal/Modal";
 import { TextField } from "../../componentes/textField/TextField";
 
 
-export function UserForm(){
+export function UserForm({isOpen}){
+
     return(
         <>
+            <Modal estado={isOpen}>
+
+            </Modal>
             <Card>
                 <h1>Agregar Usuario</h1>
                 <DivRow>
