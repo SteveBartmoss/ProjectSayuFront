@@ -13,7 +13,12 @@ export const taskSlice = createSlice({
     name: 'tasks',
     initialState: firstState,
     reducers: {
-
+        addTask: (state,action)=>{
+            state.push(action.payload)
+        },
+        deleteTask: (state,action)=>{
+            return state.filter(element => element.id !== action.payload)
+        }
     }
 })
 
