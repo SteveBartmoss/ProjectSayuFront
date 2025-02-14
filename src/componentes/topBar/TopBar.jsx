@@ -4,12 +4,12 @@ import './TopBar.css';
 import { Modal } from '../modal/Modal';
 import { Card, CardAccions } from '../card/Card';
 import { TextField } from '../textField/TextField';
-import { DivRow } from '../contenedores/Contenedores';
-import { DivCol } from '../contenedores/Contenedores';
+import { DivRow, DivCol } from '../contenedores/Contenedores';
 import { Menu } from '../menu/Menu';
+import { FaHome, FaTasks, FaNewspaper, FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export function TopBar(){
-    
     const [openNewTask,setOpenNewTask] = useState(false)
 
     const openModalTask=()=>{
@@ -25,10 +25,31 @@ export function TopBar(){
     return(
         <>
             <div className="top-bar-background">
-                <span>User image</span>
-                <Menu titulo={'configuracion'} elementos={menuConfiguracion} />
-                <Btn evento={()=>openModalTask()} variant='' >Aregar Tarea</Btn>
-                <span>Top Bar</span>
+                <div className="top-bar-left">
+                    <span>User image</span>
+                    <nav className="nav-buttons">
+                        <Link to="/" className="nav-item">
+                            <FaHome className="nav-icon" />
+                            <span>Inicio</span>
+                        </Link>
+                        <Link to="/tareas" className="nav-item">
+                            <FaTasks className="nav-icon" />
+                            <span>Tareas</span>
+                        </Link>
+                        <Link to="/feed" className="nav-item">
+                            <FaNewspaper className="nav-icon" />
+                            <span>Feed</span>
+                        </Link>
+                        <Link to="/perfil" className="nav-item">
+                            <FaUser className="nav-icon" />
+                            <span>Perfil</span>
+                        </Link>
+                    </nav>
+                </div>
+                <div className="top-bar-right">
+                    <Btn evento={()=>openModalTask()} variant='' >Agregar Tarea</Btn>
+                    <Menu titulo={'configuracion'} elementos={menuConfiguracion} />
+                </div>
             </div>
 
             <Modal estado={openNewTask} close={closeModalTask} persistent={true}>
@@ -46,7 +67,6 @@ export function TopBar(){
                     </DivRow>
                     
                     <CardAccions>
-                        
                         <Btn>Guardar</Btn>
                         <Btn evento={()=>closeModalTask()} variant='' color='error'>Cancelar</Btn>
                     </CardAccions>
