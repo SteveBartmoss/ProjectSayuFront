@@ -1,0 +1,17 @@
+.div-menu-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.element-menu-btn {
+    padding-top: .2rem;
+    margin: 0 .5rem;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Poppins";
+    padding: .5rem 0;
+}

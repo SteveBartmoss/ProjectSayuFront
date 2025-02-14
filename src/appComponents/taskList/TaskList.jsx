@@ -1,5 +1,6 @@
-import { Card } from "../componentes/Card";
-import { ExtendPanel } from "../componentes/extendpanel/ExtendPanel";
+
+import { Card } from '../../componentes/card/Card';
+import { ExtendPanel } from '../../componentes/extendpanel/ExtendPanel';
 import './TaskList.css';
 
 

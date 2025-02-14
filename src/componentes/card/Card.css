@@ -1,61 +1,54 @@
-.card-basic {
-    background-color: var(--gris-3);
-    min-width: 30rem;
+.card-basic{
     border-radius: 1rem;
     padding: 1rem;
     margin: 1rem;
-    box-shadow: 0px 1px 10px rgba(116, 152, 182, 0.2);
+    font-family: "Poppins";
 }
 
-.card-basic h1{
-    color: white;
-    font-family: "Poppins";
+.card-basic h1 {
     font-size: 1.4rem;
+    font-weight: 500;
 }
 
 .card-basic p {
-    color: white;
-    font-family: "Poppins";
-    font-size: 1.2;
+    font-size: 1.2rem;
 }
 
-.card-outlined {
-  min-width: 30rem;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem;
-  border: solid .1rem;
-  border-color: #149eca;
+.dark{
+    background-color: #1E2326;
+    color: #9DA9A0;
 }
 
-.card {
+.ligth{
+    background-color: #374145;
+    color: #9DA9A0;
+}
+
+.card-outlined-dark{
     min-width: 30rem;
-    min-height: 25rem;
     border-radius: 1rem;
+    padding: 1rem;
     margin: 1rem;
-    box-shadow: 0px 1px 10px rgba(116, 152, 182, 0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    border: solid .1rem;
+    border-color: #149eca;
+    font-family: "Poppins";
+}
+
+.card-outlined-ligth{
+    min-width: 30rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid .1rem;
+    border-color: #384B55;
+    font-family: "Poppins";
 }
 
 .card-img-content {
-    background-color: var(--gris-3);
+    background-color: #23272f;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-}
-
-.card-title {
-    color: white;
-    font-family: "Poppins";
-    font-size: 1.3rem;
-}
-
-.card-text {
-    color: white;
-    font-family: "Poppins";
-    font-size: 1.2;
 }
 
 .card-link {
@@ -63,7 +56,7 @@
     color: white;
     font-family: "Poppins";
     font-weight: 600;
-    background-color: var(--azul-11);
+    background-color: #149eca;
     padding: 1rem;
     border-radius: .5rem;
 }

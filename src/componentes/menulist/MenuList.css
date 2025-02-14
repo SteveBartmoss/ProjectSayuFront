@@ -1,1 +1,22 @@
+.menu-list-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .5rem;
+}
 
+.menu-list-title {
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Poppins";
+}
+
+.menu-list-open {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.menu-list-close {
+    display: none;
+}

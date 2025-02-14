@@ -1,9 +1,12 @@
-import { TaskList } from "./TaskList";
 import './Tablero.css';
+import { TaskList } from '../appComponents/taskList/TaskList';
+import { useSelector } from 'react-redux';
 
 export function Tablero(){
 
-    const toDoList=[
+    const toDoList = useSelector( state => state.tasks)
+
+    /*const toDoList=[
         {
             id: 1,
             title: "Tarea 1",
@@ -22,7 +25,7 @@ export function Tablero(){
             description: "Prueba 3",
             state: "creada", 
         }
-    ]
+    ]*/
 
     const inProgressList=[
         {
@@ -86,6 +89,7 @@ export function Tablero(){
             state: "creada", 
         }
     ]
+
     return(
         <>
             <div className="div-tablero">

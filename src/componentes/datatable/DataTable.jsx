@@ -1,6 +1,8 @@
-import { generateUniqueId, generateUniqueIdV2, generateUniqueIdV3 } from './helpers/uid';
+import {generateUniqueIdV2} from '../helpers/uid'
+import './DataTable.css';
 
 export function DataTable({ headers, elements }) {
+
     return (
         <table>
             <thead>
