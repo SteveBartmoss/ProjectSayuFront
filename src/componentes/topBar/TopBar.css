@@ -1,5 +1,36 @@
-.top-bar-background{
-    background-color: blue;
+.top-bar-background {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+
+.top-bar-nav {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+.nav-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.nav-item span {
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
 }
