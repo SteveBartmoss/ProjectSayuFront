@@ -25,28 +25,28 @@ export function TopBar(){
     return(
         <>
             <div className="top-bar-background">
-                <div className="top-bar-left">
+                <div className="top-bar-section">
                     <span>User image</span>
-                    <nav className="nav-buttons">
-                        <Link to="/" className="nav-item">
-                            <FaHome className="nav-icon" />
-                            <span>Inicio</span>
-                        </Link>
-                        <Link to="/tareas" className="nav-item">
-                            <FaTasks className="nav-icon" />
-                            <span>Tareas</span>
-                        </Link>
-                        <Link to="/feed" className="nav-item">
-                            <FaNewspaper className="nav-icon" />
-                            <span>Feed</span>
-                        </Link>
-                        <Link to="/perfil" className="nav-item">
-                            <FaUser className="nav-icon" />
-                            <span>Perfil</span>
-                        </Link>
-                    </nav>
                 </div>
-                <div className="top-bar-right">
+                <nav className="top-bar-section nav-buttons">
+                    <Link to="/" className="nav-item">
+                        <FaHome className="nav-icon" />
+                        <span>Inicio</span>
+                    </Link>
+                    <Link to="/tareas" className="nav-item">
+                        <FaTasks className="nav-icon" />
+                        <span>Tareas</span>
+                    </Link>
+                    <Link to="/feed" className="nav-item">
+                        <FaNewspaper className="nav-icon" />
+                        <span>Feed</span>
+                    </Link>
+                    <Link to="/perfil" className="nav-item">
+                        <FaUser className="nav-icon" />
+                        <span>Perfil</span>
+                    </Link>
+                </nav>
+                <div className="top-bar-section actions">
                     <Btn evento={()=>openModalTask()} variant='' >Agregar Tarea</Btn>
                     <Menu titulo={'configuracion'} elementos={menuConfiguracion} />
                 </div>
